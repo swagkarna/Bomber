@@ -9,6 +9,7 @@ else
 echo 'Installing Requirements....'
 echo .
 echo .
+apt install ruby
 apt install figlet toilet python curl -y
 apt install python3-pip
 pip install -r requirements.txt
