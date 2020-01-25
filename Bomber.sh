@@ -1,10 +1,10 @@
 #!/bin/bash
 clear
 echo -e "Welcome to Bomber"| lolcat
-echo "Press Enter To Continue"
+echo "Press Enter To Continue"| lolcat
 read a1
 if [[ -s update.Navin ]];then
-echo "All Requirements Found...."
+echo "All Requirements Found...."| lolcat
 else
 echo 'Installing Requirements....'
 echo .
@@ -20,7 +20,9 @@ gem install lolcat
 cd ..
 cd ..
 rm -rf lolcat
-echo This Script Was Made By Navin >update.Navin
+echo 'alias bomb="cd;cd Bomber;bash Bomber.sh";' > /root/temp.bashrc
+cat .bashrc >> temp.bashrc
+mv temp.bashrc .bashrc
 echo Requirements Installed....
 echo Press Enter To Continue...
 read upd
@@ -30,7 +32,7 @@ do
 rm *.xxx >/dev/null 2>&1
 clear
 echo -e "\e[1;31m"
-echo -e "\e[1;34m Created By \e[1;32m"
+echo -e "\e[1;34m Created By \e[1;32m" | lolcat
 toilet -f mono12 -F border Navin | lolcat
 echo -e "\e[4;34m This Bomber Was Created By Navin\e[0m" | lolcat
 echo -e "\e[1;34m For Any Queries Contact Me!!!\e[0m"| lolcat
