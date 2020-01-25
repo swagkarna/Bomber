@@ -1,5 +1,6 @@
 #!/bin/bash
 clear
+rm -rf temp.*
 echo -e "Welcome to Bomber"| lolcat
 echo "Press Enter To Continue"| lolcat
 read a1
@@ -20,19 +21,6 @@ gem install lolcat
 cd ..
 cd ..
 rm -rf lolcat
-echo 'alias bomb="cd;cd Bomber;bash Bomber.sh";' > /root/temp.bashrc
-cd /root/
-cat .bashrc >> temp.bashrc
-mv temp.bashrc .bashrc
-cd
-cd ..
-cd usr
-cd etc
-echo 'alias bomb="cd;cd Bomber;bash Bomber.sh";' > /root/temp.bashrc
-cd /root/
-cat bash.bashrc >> temp.bashrc
-mv temp.bashrc bash.bashrc
-cd
 echo Requirements Installed....
 echo Press Enter To Continue...
 read upd
