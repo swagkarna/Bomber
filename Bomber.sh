@@ -20,6 +20,7 @@ gem install lolcat
 cd ..
 cd ..
 rm -rf lolcat
+echo This Script Was Made By Navin >update.Navin
 echo Requirements Installed....
 echo Press Enter To Continue...
 read upd
