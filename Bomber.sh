@@ -1,15 +1,15 @@
 #!/bin/bash
 clear
-echo -e "Welcome to Bomber"| lolcat
-echo "Press Enter To Continue"| lolcat
+echo -e "Welcome to Bomber"
+echo "Press Enter To Continue"
 read a1
 if [[ -s update.Navin ]];then
-echo "All Requirements Found...."| lolcat
+echo "All Requirements Found...."
 else
 echo 'Installing Requirements....'
 echo .
 echo .
-apt install ruby figlet fortune cowsay boxes -y
+apt install ruby figlet fortune cowsay -y
 apt install figlet toilet python curl -y
 apt install python3-pip
 pip install -r requirements.txt
@@ -32,6 +32,7 @@ clear
 echo -e "\e[1;31m"
 echo -e "\e[1;34m Created By \e[1;32m" | lolcat
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
+pkg install boxes -y
 toilet -f ivrit 'Navin' | boxes -d cat -a hc -p h8 | lolcat
 else
 cowsay -f tux "Navin" | lolcat
