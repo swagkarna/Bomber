@@ -1,6 +1,5 @@
 #!/bin/bash
 clear
-rm -rf temp.*
 echo -e "Welcome to Bomber"| lolcat
 echo "Press Enter To Continue"| lolcat
 read a1
@@ -10,7 +9,7 @@ else
 echo 'Installing Requirements....'
 echo .
 echo .
-apt install ruby
+apt install ruby figlet fortune cowsay boxes -y
 apt install figlet toilet python curl -y
 apt install python3-pip
 pip install -r requirements.txt
@@ -31,7 +30,7 @@ rm *.xxx >/dev/null 2>&1
 clear
 echo -e "\e[1;31m"
 echo -e "\e[1;34m Created By \e[1;32m" | lolcat
-toilet -f mono12 -F border Navin | lolcat
+toilet -f ivrit 'Navin' | boxes -d cat -a hc -p h8 | lolcat
 echo -e "\e[4;34m This Bomber Was Created By Navin\e[0m" | lolcat
 echo -e "\e[1;34m For Any Queries Contact Me!!!\e[0m"| lolcat
 echo -e "\e[1;32m   Intagram:- navin_hariharan\e[0m"| lolcat
