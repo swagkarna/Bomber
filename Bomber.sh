@@ -31,7 +31,11 @@ rm *.xxx >/dev/null 2>&1
 clear
 echo -e "\e[1;31m"
 echo -e "\e[1;34m Created By \e[1;32m" | lolcat
+if [[ "$OSTYPE" == "linux-gnu" ]]; then
 toilet -f ivrit 'Navin' | boxes -d cat -a hc -p h8 | lolcat
+else
+cowsay -f tux "Navin" | lolcat
+fi
 echo -e "\e[4;34m This Bomber Was Created By Navin\e[0m" | lolcat
 echo -e "\e[1;34m For Any Queries Contact Me!!!\e[0m"| lolcat
 echo -e "\e[1;32m   Intagram:- navin_hariharan\e[0m"| lolcat
