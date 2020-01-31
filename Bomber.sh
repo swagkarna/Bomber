@@ -40,7 +40,6 @@ fi
 echo -e "\e[4;34m This Bomber Was Created By Navin\e[0m" | lolcat
 echo -e "\e[1;34m For Any Queries Contact Me!!!\e[0m"| lolcat
 echo -e "\e[1;32m   Intagram:- navin_hariharan\e[0m"| lolcat
-echo -e "\e[4;32m   Whatsapp: +917305574234 \e[0m"| lolcat
 echo " "| lolcat
 echo -e "\e[4;31m Please Read Instruction Carefully !!! \e[0m"| lolcat
 echo " "| lolcat
