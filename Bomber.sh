@@ -4,10 +4,10 @@ echo -e "Welcome to Bomber"
 echo "Press Enter To Continue"
 read a1
 if [[ -s update.Navin ]];then
+echo "All Requirements Found...." | lolcat
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
 apt install boxes -y
 fi
-echo "All Requirements Found...."
 else
 echo 'Installing Requirements....'
 echo .
